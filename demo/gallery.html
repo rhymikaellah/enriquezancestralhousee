@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery - Enriquez Ancestral House</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Times New Roman', serif;
+            background-image: url('demo/ijkl.jpg'); 
+            background-size: cover; 
+            background-position: center; 
+            color: white;
+            display: flex;
+            flex-direction: column;
+            align-items: center; 
+            justify-content: center; /* Center content vertically */
+            height: 100vh; /* Full height of the viewport */
+            padding: 20px; 
+        }
+
+        h1 {
+            font-size: 3em; 
+            margin-bottom: 20px; 
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); 
+        }
+
+        .gallery {
+            display: grid; /* Use grid layout for collage */
+            grid-template-columns: repeat(3, 1fr); /* Three images per row */
+            gap: 20px; /* Space between images */
+            max-width: 1000px; /* Limit gallery width */
+            width: 100%; /* Full width of the container */
+        }
+
+        .gallery-item {
+            border: 2px solid rgba(255, 255, 255, 0.5); /* Border around each image */
+            border-radius: 10px; /* Rounded corners for images */
+            overflow: hidden; /* Prevent overflow of rounded corners */
+            text-align: center; /* Center text under images */
+        }
+
+        .gallery img {
+            width: 100%; /* Full width of the gallery item */
+            height: auto; /* Maintain aspect ratio */
+        }
+
+        .back-button {
+            display: block;
+            margin-top: 30px; /* Space above the button */
+            text-decoration: none; 
+            color: white; 
+            background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background for button */
+            padding: 10px; 
+            border-radius: 5px; 
+            font-size: 1.2em; /* Font size for button */
+            transition: background-color 0.3s; /* Transition effect for hover state */
+        }
+
+        .back-button:hover {
+            background-color: rgba(0, 0, 0, 0.7); /* Darker shade on hover */
+        }
+    </style>
+</head>
+<body>
+    <h1> MGA LARAWAN SA ENRIQUEZ ANCESTRAL HOUSE</h1>
+
+    <div class="gallery">
+        <div class="gallery-item">
+            <img src="demo/4554778_orig.jpg" alt="Image Description 1"> <!-- Replace with actual image path -->
+        </div>
+        <div class="gallery-item">
+            <img src="demo/5335259_orig.jpg" alt="Image Description 2"> <!-- Replace with actual image path -->
+        </div>
+        <div class="gallery-item">
+            <img src="demo/3747145_orig.jpg" alt="Image Description 3"> <!-- Replace with actual image path -->
+        </div>
+        <div class="gallery-item">
+            <img src="demo/9757762_orig.jpg" alt="Image Description 4"> <!-- Replace with actual image path -->
+        </div>
+        <div class="gallery-item">
+            <img src="demo/8858333_orig.jpg" alt="Image Description 5"> <!-- Replace with actual image path -->
+        </div>
+        <div class="gallery-item">
+            <img src="demo/5394294_orig.jpg" alt="Image Description 6"> <!-- Replace with actual image path -->
+        </div>
+    </div>
+
+    <a href="index.html" class="back-button">ENRIQUEZ ANCESTRAL HOUSE</a>
+</body>
+</html>
